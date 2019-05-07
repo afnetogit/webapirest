@@ -8,16 +8,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * TODO insert class description
- *
  * @author : afneto
  */
 
 @RestController
 public class Controller {
 
-    @RequestMapping(value = "/", method = RequestMethod.GET)
-    public static List<String> GetPessoas() {
+    @RequestMapping(value = "/getPessoas", method = RequestMethod.GET)
+    public static List<String> getPessoas() {
 
         final List<String> list = new ArrayList<String>();
         list.add("André");
